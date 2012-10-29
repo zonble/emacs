@@ -8,6 +8,7 @@
 ;                            (untabify (point-min) (point-max))
                              (delete-trailing-whitespace))))
              (set (make-local-variable 'tab-width) 4)
+             (set (make-local-variable 'python-indent) 4)
              (set (make-local-variable 'indent-tabs-mode) t)))
 
 (defun python-reindent-then-newline-and-indent ()
