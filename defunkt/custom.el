@@ -21,7 +21,7 @@
  '(ruby-deep-indent-paren-style nil)
  '(show-paren-mode nil)
  '(standard-indent 2)
- '(tabbar-mode nil nil (tabbar))
+;; '(tabbar-mode nil nil (tabbar))
  '(text-mode-hook (quote (smart-spacing-mode)))
  '(transient-mark-mode t))
 (custom-set-faces

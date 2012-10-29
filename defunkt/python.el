@@ -5,10 +5,10 @@
              (add-hook 'local-write-file-hooks
                         '(lambda()
                            (save-excursion
-                             (untabify (point-min) (point-max))
+;                            (untabify (point-min) (point-max))
                              (delete-trailing-whitespace))))
              (set (make-local-variable 'tab-width) 4)
-             (set (make-local-variable 'indent-tabs-mode) 'nil)))
+             (set (make-local-variable 'indent-tabs-mode) t)))
 
 (defun python-reindent-then-newline-and-indent ()
   "Reindents the current line then creates an indented newline."
