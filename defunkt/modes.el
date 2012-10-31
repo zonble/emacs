@@ -12,6 +12,7 @@
 (load "defunkt/markdown")
 (load "defunkt/css")
 (load "defunkt/lua")
+(load "defunkt/objc")
 
 ;; all modes
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
