@@ -22,7 +22,7 @@
  '(show-paren-mode nil)
  '(standard-indent 2)
 ;; '(tabbar-mode nil nil (tabbar))
- '(text-mode-hook (quote (smart-spacing-mode)))
+;; '(text-mode-hook (quote (smart-spacing-mode)))
  '(transient-mark-mode t))
 (custom-set-faces
   ;; custom-set-faces was added by Custom.

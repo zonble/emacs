@@ -28,3 +28,6 @@
 [submodule "vendor/scss-mode"]
 	path = vendor/scss-mode
 	url = https://github.com/antonj/scss-mode
+[submodule "vendor/evernote-mode"]
+	path = vendor/evernote-mode
+	url = https://github.com/awasira/emacs-evernote-mode
