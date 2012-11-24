@@ -5,7 +5,6 @@
              (add-hook 'local-write-file-hooks
                         '(lambda()
                            (save-excursion
-;                            (untabify (point-min) (point-max))
                              (delete-trailing-whitespace))))
              (set (make-local-variable 'tab-width) 4)
              (set (make-local-variable 'python-indent) 4)

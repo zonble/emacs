@@ -21,6 +21,11 @@
 (global-set-key [M-down] 'defunkt-todo-move-item-down)
 (global-set-key [M-up] 'defunkt-todo-move-item-up)
 
+; Evernote
+
+(global-set-key "\C-xno" 'evernote-open-note)
+(global-set-key "\C-xnn" 'evernote-create-note)
+
 ; vim emulation
 (global-set-key [C-tab] 'other-window)
 ;; (global-set-key [M-up] 'defunkt-inc-num-at-point)
