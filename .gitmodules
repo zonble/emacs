@@ -31,3 +31,6 @@
 [submodule "vendor/evernote-mode"]
     path = vendor/evernote-mode
     url = https://github.com/awasira/emacs-evernote-mode
+[submodule "vendor/yasnippet"]
+	path = vendor/yasnippet
+	url = https://github.com/capitaomorte/yasnippet

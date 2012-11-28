@@ -21,7 +21,7 @@
 
 ; (vendor 'ack)
 ; (vendor 'cheat)
-; (vendor 'magit)
+(vendor 'magit)
 ; (vendor 'gist)
 ; (vendor 'growl)
 ; (vendor 'twittering-mode)
