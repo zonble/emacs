@@ -16,7 +16,7 @@
 (load "defunkt/evernote")
 (load "defunkt/org")
 
-;; all modes
+;; ALL modes
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ;; emacs
