@@ -1,3 +1,5 @@
+; Custom functions
+
 (defun now ()
   "Insert string for the current time formatted like '2:34 PM'."
   (interactive)						 ; permit invocation in minibuffer
@@ -9,10 +11,11 @@ e.g. Sunday, September 17, 2000."
   (interactive)						 ; permit invocation in minibuffer
   (insert (format-time-string "%A, %B %e, %Y")))
 
+(setq inhibit-startup-message t)
+
+; ispell
+
 (setq-default ispell-program-name "/usr/local/bin/ispell")
 (setq-default ispell-list-command "list")
-(setq org-log-done t)
-(setq org-directory "~/Dropbox/org")
-(setq org-agenda-files (list "~/Dropbox/org/work.org"
-							 "~/Dropbox/org/week.org" 
-							 "~/Dropbox/org/home.org"))
+
+(setq diary-file "~/Dropbox/.diary")
