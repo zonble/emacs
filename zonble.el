@@ -41,5 +41,13 @@ e.g. Sunday, September 17, 2000."
     (set-frame-size frame w h)))
 
 (arrange-frame 80 30 10 20)
-
 (setq diary-file "~/Dropbox/.diary")
+
+;; Define keys
+
+(global-set-key [(super right)] 'move-end-of-line)
+(global-set-key [(super left)] 'move-beginning-of-line)
+(global-set-key [(super up)] 'beginning-of-buffer)
+(global-set-key [(super down)] 'end-of-buffer)
+
+(define-key evernote-mode-map [(super s)] 'evernote-save-note)
