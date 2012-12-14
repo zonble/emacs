@@ -49,5 +49,9 @@ e.g. Sunday, September 17, 2000."
 (global-set-key [(super left)] 'move-beginning-of-line)
 (global-set-key [(super up)] 'beginning-of-buffer)
 (global-set-key [(super down)] 'end-of-buffer)
+(global-set-key [(super =)] 'text-scale-increase)
+(global-set-key [(super +)] 'text-scale-increase)
+(global-set-key [(super -)] 'text-scale-decrease)
+(global-set-key [(super _)] 'text-scale-decrease)
 
 (define-key evernote-mode-map [(super s)] 'evernote-save-note)
