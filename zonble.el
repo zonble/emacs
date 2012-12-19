@@ -39,7 +39,7 @@ e.g. Sunday, September 17, 2000."
     (delete-other-windows)
     (set-frame-position frame x y)
     (set-frame-size frame w h)))
-(arrange-frame 80 30 10 20)
+(arrange-frame 80 27 10 20)
 
 ;; Define keys
 (if (featurep 'ns)
@@ -49,10 +49,10 @@ e.g. Sunday, September 17, 2000."
            (global-set-key [(super down)] 'end-of-buffer)
            (global-set-key [(super return)] 'ns-toggle-fullscreen)
            (global-set-key [(super w)] 'kill-buffer-and-window)
-		   (global-set-key [(super =)] 'text-scale-increase)
-		   (global-set-key [(super +)] 'text-scale-increase)
-		   (global-set-key [(super -)] 'text-scale-decrease)
-		   (global-set-key [(super _)] 'text-scale-decrease)
+           (global-set-key [(super =)] 'text-scale-increase)
+           (global-set-key [(super +)] 'text-scale-increase)
+           (global-set-key [(super -)] 'text-scale-decrease)
+           (global-set-key [(super _)] 'text-scale-decrease)
            (define-key evernote-mode-map [(super s)] 'evernote-save-note)))
 
 (eval-when-compile (require 'cl))

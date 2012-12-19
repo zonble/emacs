@@ -31,4 +31,4 @@
  '(mode-line ((t (:inherit aquamacs-variable-width :background "grey75" :foreground "black" :width normal))))
  '(text-mode-default ((t (:inherit autoface-default))) t))
 
-(set-face-attribute 'default nil :family "Monaco" :height 180 :weight 'normal)
+;; (set-face-attribute 'default nil :family "Monaco" :height 180 :weight 'normal)
