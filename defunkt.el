@@ -36,3 +36,4 @@
 ; (vendor 'scss-mode)
 (vendor 'evernote-mode)
 (vendor 'rst)
+(vendor 'php-mode)

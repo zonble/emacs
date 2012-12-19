@@ -1,20 +1,5 @@
 (setq diary-file "~/Dropbox/.diary")
 
-; Custom functions
-(defun z-presentation ()
-  (interactive)
-  (progn
-	(set-frame-font
-	 "-outline-Courier New-normal-normal-normal-mono-25-*-*-*-c-*-iso8859-1")
-	(ns-toggle-fullscreen)))
-
-(defun z-editor ()
-  (interactive)
-  (progn
-	(set-frame-font
-	 "-outline-Courier New-normal-normal-normal-mono-18-*-*-*-c-*-iso8859-1")
-	(ns-toggle-fullscreen)))
-
 (defun osstatus (number)
   "Convert osstatus"
   (interactive "nOSStatus:")
@@ -54,27 +39,28 @@ e.g. Sunday, September 17, 2000."
     (delete-other-windows)
     (set-frame-position frame x y)
     (set-frame-size frame w h)))
-
 (arrange-frame 80 30 10 20)
-
 
 ;; Define keys
 (if (featurep 'ns)
-	(progn (global-set-key [(super right)] 'move-end-of-line)
-		   (global-set-key [(super left)] 'move-beginning-of-line)
-		   (global-set-key [(super up)] 'beginning-of-buffer)
-		   (global-set-key [(super down)] 'end-of-buffer)
-		   (global-set-key [(super return)] 'ns-toggle-fullscreen)
-		   (global-set-key [(super w)] 'kill-buffer-and-window)
-		   (define-key evernote-mode-map [(super s)] 'evernote-save-note)))
+    (progn (global-set-key [(super right)] 'move-end-of-line)
+           (global-set-key [(super left)] 'move-beginning-of-line)
+           (global-set-key [(super up)] 'beginning-of-buffer)
+           (global-set-key [(super down)] 'end-of-buffer)
+           (global-set-key [(super return)] 'ns-toggle-fullscreen)
+           (global-set-key [(super w)] 'kill-buffer-and-window)
+		   (global-set-key [(super =)] 'text-scale-increase)
+		   (global-set-key [(super +)] 'text-scale-increase)
+		   (global-set-key [(super -)] 'text-scale-decrease)
+		   (global-set-key [(super _)] 'text-scale-decrease)
+           (define-key evernote-mode-map [(super s)] 'evernote-save-note)))
 
 (eval-when-compile (require 'cl))
 
 (defun set-font (english chinese english-size chinese-size)
   (set-face-attribute 'default nil :font
-					  (format "%s:pixelsize=%d" english english-size))
+                      (format "%s:pixelsize=%d" english english-size))
   (dolist (charset '(kana han symbol cjk-misc bopomofo))
-	(set-fontset-font (frame-parameter nil 'font) charset
-					  (font-spec :family chinese :size chinese-size))))
-
+    (set-fontset-font (frame-parameter nil 'font) charset
+                      (font-spec :family chinese :size chinese-size))))
 (set-font "Monaco" "LiHei Pro" 20 24)
