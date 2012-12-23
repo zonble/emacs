@@ -29,6 +29,12 @@
  '(js2-mode-default ((t (:inherit autoface-default))) t)
  '(minibuffer-prompt ((((background dark)) (:foreground "cyan" :height 180))))
  '(mode-line ((t (:inherit aquamacs-variable-width :background "grey75" :foreground "black" :width normal))))
+ '(rst-level-1-face ((t (:background "dark red"))) t)
+ '(rst-level-2-face ((t (:background "dark red"))) t)
+ '(rst-level-3-face ((t (:background "dark red"))) t)
+ '(rst-level-4-face ((t (:background "dark red"))) t)
+ '(rst-level-5-face ((t (:background "dark red"))) t)
+ '(rst-level-6-face ((t (:background "dark red"))) t)
  '(text-mode-default ((t (:inherit autoface-default))) t))
 
 ;; (set-face-attribute 'default nil :family "Monaco" :height 180 :weight 'normal)
