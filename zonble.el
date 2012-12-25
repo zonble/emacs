@@ -1,6 +1,6 @@
 (setq diary-file "~/Dropbox/.diary")
 
-(defun osstatus (number)
+(defun osstatus-to-string (number)
   "Convert osstatus"
   (interactive "nOSStatus:")
   (let* ((a (logand (lsh number -24) 255))
@@ -8,6 +8,15 @@
          (c (logand (lsh number -8) 255))
          (d (logand (lsh number 0) 255)))
     (message (format "Output: %c%c%c%c" a b c d))))
+
+(defun string-to-osstatus (input)
+  (interactive "sString:")
+  (let* ((a (string-to-char (substring input 0 1)))
+		 (b (string-to-char (substring input 1 2)))
+		 (c (string-to-char (substring input 2 3)))
+		 (d (string-to-char (substring input 3 4)))
+		 (r (+ (lsh a 24) (lsh b 16) (lsh c 8) d)))
+	(message "OSStatus:%d" r)))
 
 (defun now ()
   "Insert string for the current time formatted like '2:34 PM'."
@@ -56,11 +65,13 @@ e.g. Sunday, September 17, 2000."
            (define-key evernote-mode-map [(super s)] 'evernote-save-note)))
 
 (eval-when-compile (require 'cl))
-
 (defun set-font (english chinese english-size chinese-size)
   (set-face-attribute 'default nil :font
                       (format "%s:pixelsize=%d" english english-size))
   (dolist (charset '(kana han symbol cjk-misc bopomofo))
     (set-fontset-font (frame-parameter nil 'font) charset
                       (font-spec :family chinese :size chinese-size))))
-(set-font "Monaco" "LiHei Pro" 20 24)
+
+;; Set custom font.
+(if (featurep 'ns)
+	(set-font "Monaco" "LiHei Pro" 20 24))
