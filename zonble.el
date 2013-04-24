@@ -1,5 +1,10 @@
 (setq diary-file "~/Dropbox/.diary")
 
+(defun open-ticket (input)
+  (interactive "sTicket:")
+  (let ((url (concat "https://issue.kkcorp/trac/ticket/" input)))
+    (browse-url url)))
+
 (defun osstatus-to-string (number)
   "Convert osstatus"
   (interactive "nOSStatus:")
@@ -12,11 +17,11 @@
 (defun string-to-osstatus (input)
   (interactive "sString:")
   (let* ((a (string-to-char (substring input 0 1)))
-		 (b (string-to-char (substring input 1 2)))
-		 (c (string-to-char (substring input 2 3)))
-		 (d (string-to-char (substring input 3 4)))
-		 (r (+ (lsh a 24) (lsh b 16) (lsh c 8) d)))
-	(message "OSStatus:%d" r)))
+         (b (string-to-char (substring input 1 2)))
+         (c (string-to-char (substring input 2 3)))
+         (d (string-to-char (substring input 3 4)))
+         (r (+ (lsh a 24) (lsh b 16) (lsh c 8) d)))
+    (message "OSStatus:%d" r)))
 
 (defun now ()
   "Insert string for the current time formatted like '2:34 PM'."
@@ -36,20 +41,6 @@ e.g. Sunday, September 17, 2000."
 (setq-default ispell-program-name "/usr/local/bin/ispell")
 (setq-default ispell-list-command "list")
 
-(setq org-log-done t)
-(setq org-directory "~/Dropbox/org")
-(setq org-agenda-files (list "~/Dropbox/org/work.org"
-                             "~/Dropbox/org/week.org"
-                             "~/Dropbox/org/home.org"))
-
-(defun arrange-frame (w h x y)
-  "Set the width, height, and x/y position of the current frame"
-  (let ((frame (selected-frame)))
-    (delete-other-windows)
-    (set-frame-position frame x y)
-    (set-frame-size frame w h)))
-(arrange-frame 80 27 10 20)
-
 ;; Define keys
 (if (featurep 'ns)
     (progn (global-set-key [(super right)] 'move-end-of-line)
@@ -64,6 +55,13 @@ e.g. Sunday, September 17, 2000."
            (global-set-key [(super _)] 'text-scale-decrease)
            (define-key evernote-mode-map [(super s)] 'evernote-save-note)))
 
+(defun arrange-frame (w h x y)
+  "Set the width, height, and x/y position of the current frame"
+  (let ((frame (selected-frame)))
+    (delete-other-windows)
+    (set-frame-position frame x y)
+    (set-frame-size frame w h)))
+
 (eval-when-compile (require 'cl))
 (defun set-font (english chinese english-size chinese-size)
   (set-face-attribute 'default nil :font
@@ -74,4 +72,5 @@ e.g. Sunday, September 17, 2000."
 
 ;; Set custom font.
 (if (featurep 'ns)
-	(set-font "Monaco" "LiHei Pro" 20 24))
+    (progn (arrange-frame 80 27 10 20)
+           (set-font "Monaco" "LiHei Pro" 20 24)))

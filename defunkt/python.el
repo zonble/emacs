@@ -2,13 +2,14 @@
           (lambda ()
             (define-key python-mode-map "\C-m"
               'python-reindent-then-newline-and-indent)
-             (add-hook 'local-write-file-hooks
-                        '(lambda()
-                           (save-excursion
-                             (delete-trailing-whitespace))))
-             (set (make-local-variable 'tab-width) 4)
-             (set (make-local-variable 'python-indent) 4)
-             (set (make-local-variable 'indent-tabs-mode) t)))
+			;; (setq imenu-create-index-function 'python-imenu-create-index)
+			(add-hook 'local-write-file-hooks
+					  '(lambda()
+						 (save-excursion
+						   (delete-trailing-whitespace))))
+			(set (make-local-variable 'tab-width) 4)
+			(set (make-local-variable 'python-indent) 4)
+			(set (make-local-variable 'indent-tabs-mode) t)))
 
 (defun python-reindent-then-newline-and-indent ()
   "Reindents the current line then creates an indented newline."
