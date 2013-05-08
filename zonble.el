@@ -52,8 +52,7 @@ e.g. Sunday, September 17, 2000."
            (global-set-key [(super =)] 'text-scale-increase)
            (global-set-key [(super +)] 'text-scale-increase)
            (global-set-key [(super -)] 'text-scale-decrease)
-           (global-set-key [(super _)] 'text-scale-decrease)
-           (define-key evernote-mode-map [(super s)] 'evernote-save-note)))
+           (global-set-key [(super _)] 'text-scale-decrease)))
 
 (defun arrange-frame (w h x y)
   "Set the width, height, and x/y position of the current frame"
@@ -74,3 +73,8 @@ e.g. Sunday, September 17, 2000."
 (if (featurep 'ns)
     (progn (arrange-frame 80 27 10 20)
            (set-font "Monaco" "LiHei Pro" 20 24)))
+
+(set 'org-latex-to-pdf-process
+     '("xelatex -interaction nonstopmode %f"
+       "xelatex -interaction nonstopmode %f"
+       "xelatex -interaction nonstopmode %f"))

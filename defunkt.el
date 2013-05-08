@@ -24,7 +24,6 @@
 ; (vendor 'any-ini-mode)
 ; (vendor 'mustache-mode)
 ; (vendor 'scss-mode)
-(vendor 'evernote-mode)
 (vendor 'rst)
 (vendor 'php-mode)
 (vendor 'writeroom-mode)

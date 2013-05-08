@@ -4,3 +4,4 @@ local.el
 *.elc
 private.el
 *~
+elpa

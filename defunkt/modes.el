@@ -13,8 +13,8 @@
 (load "defunkt/css")
 (load "defunkt/lua")
 (load "defunkt/objc")
-(load "defunkt/evernote")
 (load "defunkt/org")
+(load "defunkt/color-theme-tomorrow")
 
 ;; ALL modes
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
