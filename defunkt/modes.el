@@ -15,6 +15,8 @@
 (load "defunkt/objc")
 (load "defunkt/org")
 (load "defunkt/color-theme-tomorrow")
+(load "defunkt/xml-rpc")
+(load "defunkt/trac-wiki")
 
 ;; ALL modes
 (add-hook 'before-save-hook 'delete-trailing-whitespace)

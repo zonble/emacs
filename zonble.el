@@ -78,3 +78,6 @@ e.g. Sunday, September 17, 2000."
      '("xelatex -interaction nonstopmode %f"
        "xelatex -interaction nonstopmode %f"
        "xelatex -interaction nonstopmode %f"))
+
+(add-to-list 'trac-projects '("kkbox" :endpoint "https://issue.kkcorp/trac/xmlrpc"))
+(setq ns-pop-up-frames nil)
