@@ -81,3 +81,7 @@ e.g. Sunday, September 17, 2000."
 
 (add-to-list 'trac-projects '("kkbox" :endpoint "https://issue.kkcorp/trac/xmlrpc"))
 (setq ns-pop-up-frames nil)
+
+
+(require 'package)
+(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)

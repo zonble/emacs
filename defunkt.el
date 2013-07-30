@@ -27,3 +27,7 @@
 (vendor 'rst)
 (vendor 'php-mode)
 (vendor 'writeroom-mode)
+(vendor 'dash)
+(vendor 'request)
+(vendor 'cl-lib)
+(vendor 'org-trello)
