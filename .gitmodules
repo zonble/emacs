@@ -1,48 +1,48 @@
-[submodule "twilight-emacs"]
-    path = vendor/twilight-emacs
-    url = git://github.com/crafterm/twilight-emacs.git
-[submodule "/magit"]
-    path = vendor/magit
-    url = git://github.com/technomancy/magit.git
+[submodule "vendor/twilight-emacs"]
+	path = vendor/twilight-emacs
+	url = git://github.com/crafterm/twilight-emacs.git
+[submodule "vendor/magit"]
+	path = vendor/magit
+	url = git://github.com/technomancy/magit.git
 [submodule "cheat.el"]
-    path = vendor/cheat.el
-    url = git://github.com/defunkt/cheat.el.git
+	path = vendor/cheat.el
+	url = git://github.com/defunkt/cheat.el.git
 [submodule "gist.el"]
-    path = vendor/gist.el
-    url = git://github.com/defunkt/gist.el.git
+	path = vendor/gist.el
+	url = git://github.com/defunkt/gist.el.git
 [submodule "vendor/textmate.el"]
-    path = vendor/textmate.el
-    url = git://github.com/defunkt/textmate.el.git
+	path = vendor/textmate.el
+	url = git://github.com/defunkt/textmate.el.git
 [submodule "vendor/yaml-mode.el"]
-    path = vendor/yaml-mode.el
-    url = git://github.com/yoshiki/yaml-mode.git
+	path = vendor/yaml-mode.el
+	url = git://github.com/yoshiki/yaml-mode.git
 [submodule "vendor/open-file-in-github"]
-    path = vendor/open-file-in-github
-    url = git://gist.github.com/170861.git
+	path = vendor/open-file-in-github
+	url = git://gist.github.com/170861.git
 [submodule "vendor/markdown-mode"]
-    path = vendor/markdown-mode
-    url = git://github.com/defunkt/markdown-mode.git
+	path = vendor/markdown-mode
+	url = git://github.com/defunkt/markdown-mode.git
 [submodule "vendor/mustache-mode"]
-    path = vendor/mustache-mode
-    url = git://github.com/mustache/emacs
+	path = vendor/mustache-mode
+	url = git://github.com/mustache/emacs
 [submodule "vendor/scss-mode"]
-    path = vendor/scss-mode
-    url = https://github.com/antonj/scss-mode
+	path = vendor/scss-mode
+	url = https://github.com/antonj/scss-mode
 [submodule "vendor/yasnippet"]
-    path = vendor/yasnippet
-    url = https://github.com/capitaomorte/yasnippet
+	path = vendor/yasnippet
+	url = https://github.com/capitaomorte/yasnippet
 [submodule "vendor/php-mode"]
-    path = vendor/php-mode
-    url = https://github.com/ejmr/php-mode
+	path = vendor/php-mode
+	url = https://github.com/ejmr/php-mode
 [submodule "vendor/tumble"]
-    path = vendor/tumble
-    url = https://github.com/febuiles/tumble.git
+	path = vendor/tumble
+	url = https://github.com/febuiles/tumble.git
 [submodule "vendor/writeroom-mode"]
-    path = vendor/writeroom-mode
-    url = https://github.com/joostkremers/writeroom-mode
+	path = vendor/writeroom-mode
+	url = https://github.com/joostkremers/writeroom-mode
 [submodule "vendor/coffee-mode"]
-    path = vendor/coffee-mode
-    url = https://github.com/defunkt/coffee-mode.git
+	path = vendor/coffee-mode
+	url = https://github.com/defunkt/coffee-mode.git
 [submodule "vendor/org-trello"]
 	path = vendor/org-trello
 	url = http://github.com/ardumont/org-trello.git
