@@ -28,6 +28,14 @@
   (interactive)                      ; permit invocation in minibuffer
   (insert (format-time-string "%D %-I:%M %p")))
 
+(defun kk-header ()
+  "Insert the header template for KKBOX project."
+  (interactive)
+  (insert (format
+		   "//\n// %s\n//\n// %s\n//"
+		   (file-name-nondirectory (buffer-file-name))
+		   "Copyright (c) 2008-2013 KKBOX Taiwan Co., Ltd. All Rights Reserved.")))
+
 (defun today ()
   "Insert string for today's date nicely formatted in American style,
 e.g. Sunday, September 17, 2000."
