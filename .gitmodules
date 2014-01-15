@@ -52,3 +52,6 @@
 [submodule "vendor/request"]
 	path = vendor/request
 	url = https://github.com/tkf/emacs-request
+[submodule "vendor/go-mode"]
+	path = vendor/go-mode
+	url = https://github.com/dominikh/go-mode.el
