@@ -30,4 +30,6 @@
 (vendor 'dash)
 (vendor 'request)
 (vendor 'cl-lib)
-(vendor 'org-trello)
+; (vendor 'org-trello)
+; (vendor 'evernote-mode)
+(vendor 'julia-mode)

@@ -43,12 +43,15 @@
 [submodule "vendor/coffee-mode"]
     path = vendor/coffee-mode
     url = https://github.com/defunkt/coffee-mode.git
-[submodule "vendor/org-trello"]
-	path = vendor/org-trello
-	url = http://github.com/ardumont/org-trello.git
 [submodule "vendor/dash"]
-	path = vendor/dash
-	url = https://github.com/magnars/dash.el.git
+    path = vendor/dash
+    url = https://github.com/magnars/dash.el.git
 [submodule "vendor/request"]
-	path = vendor/request
-	url = https://github.com/tkf/emacs-request
+    path = vendor/request
+    url = https://github.com/tkf/emacs-request
+[submodule "swift-mode"]
+    path = vendor/swift-mode
+    url = https://github.com/chrisbarrett/swift-mode.git
+[submodule "vendor/swift-mode"]
+    path = vendor/swift-mode
+    url = https://github.com/chrisbarrett/swift-mode.git
