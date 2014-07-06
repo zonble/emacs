@@ -49,9 +49,6 @@
 [submodule "vendor/request"]
     path = vendor/request
     url = https://github.com/tkf/emacs-request
-[submodule "swift-mode"]
-    path = vendor/swift-mode
-    url = https://github.com/chrisbarrett/swift-mode.git
 [submodule "vendor/swift-mode"]
     path = vendor/swift-mode
     url = https://github.com/chrisbarrett/swift-mode.git
