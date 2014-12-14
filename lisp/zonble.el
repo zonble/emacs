@@ -95,35 +95,9 @@ e.g. Sunday, September 17, 2000."
        "xelatex -interaction nonstopmode %f"
        "xelatex -interaction nonstopmode %f"))
 
-(add-to-list 'trac-projects '("kkbox" :endpoint "https://issue.kkcorp/trac/xmlrpc"))
 (setq ns-pop-up-frames nil)
-
 
 (require 'package)
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
 
 (eval-after-load "org" '(require 'ox-md nil t))
-;; A small minor mode to use a big fringe
-;; (defvar bzg-big-fringe-mode nil)
-;; (define-minor-mode bzg-big-fringe-mode
-;;   "Minor mode to hide the mode-line in the current buffer."
-;;   :init-value nil
-;;   :global t
-;;   :variable bzg-big-fringe-mode
-;;   :group 'editing-basics
-;;   (if (not bzg-big-fringe-mode)
-;;       (set-fringe-style nil)
-;;     (set-fringe-mode
-;;      (/ (- (frame-pixel-width)
-;;            (* 100 (frame-char-width)))
-;;         2))))
-
-;; ;; Now activate this global minor mode
-;; (bzg-big-fringe-mode 1)
-
-;; ;; Use a minimal cursor
-;; ;; (setq cursor-type 'hbar)
-
-;; ;; Get rid of the indicators in the fringe
-;; (mapcar (lambda(fb) (set-fringe-bitmap-face fb 'org-hide))
-;;         fringe-bitmaps)

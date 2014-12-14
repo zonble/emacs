@@ -1,11 +1,11 @@
 (defun air ()
   (interactive)
-  (replace-string "240" "180")
+  (replace-string "180" "180")
   (save-buffer))
 
 (defun big ()
   (interactive)
-  (replace-string "180" "240")
+  (replace-string "180" "180")
   (save-buffer))
 
 (defun insert-soft-tab ()

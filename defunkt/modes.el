@@ -3,10 +3,8 @@
 (load "../defunkt/ruby")
 (load "../defunkt/shell")
 (load "../defunkt/javascript")
-(load "../defunkt/erlang")
 (load "../defunkt/python")
 (load "../defunkt/sgml")
-(load "../defunkt/erc")
 (load "../defunkt/artist")
 (load "../defunkt/coffee")
 (load "../defunkt/markdown")
@@ -16,7 +14,6 @@
 (load "../defunkt/org")
 (load "../defunkt/color-theme-tomorrow")
 (load "../defunkt/xml-rpc")
-(load "../defunkt/trac-wiki")
 
 ;; ALL modes
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
