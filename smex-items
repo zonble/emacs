@@ -1,0 +1,17 @@
+
+;; ----- smex-history -----
+(
+ org-mode
+ cua-mode
+ cd
+ 5x5
+ arp
+ dbx
+ ddg
+)
+
+;; ----- smex-data -----
+(
+ (cua-mode . 2)
+ (org-mode . 1)
+)

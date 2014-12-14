@@ -102,6 +102,7 @@ e.g. Sunday, September 17, 2000."
 (require 'package)
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
 
+(eval-after-load "org" '(require 'ox-md nil t))
 ;; A small minor mode to use a big fringe
 ;; (defvar bzg-big-fringe-mode nil)
 ;; (define-minor-mode bzg-big-fringe-mode
