@@ -1,3 +1,11 @@
+(blink-cursor-mode 0)
+(setq initial-scratch-message "")
+(setq inhibit-startup-message t)
+(setq visible-bell nil)
+(scroll-bar-mode 0)
+(tool-bar-mode 0)
+(menu-bar-mode 0)
+
 (setq diary-file "~/Dropbox/.diary")
 
 (defun open-ticket (input)
@@ -32,9 +40,9 @@
   "Insert the header template for KKBOX project."
   (interactive)
   (insert (format
-		   "//\n// %s\n//\n// %s\n//"
-		   (file-name-nondirectory (buffer-file-name))
-		   "Copyright (c) 2008-2013 KKBOX Taiwan Co., Ltd. All Rights Reserved.")))
+           "//\n// %s\n//\n// %s\n//"
+           (file-name-nondirectory (buffer-file-name))
+           "Copyright (c) 2008-2013 KKBOX Taiwan Co., Ltd. All Rights Reserved.")))
 
 (defun today ()
   "Insert string for today's date nicely formatted in American style,
@@ -78,18 +86,18 @@ e.g. Sunday, September 17, 2000."
                       (font-spec :family chinese :size chinese-size))))
 
 ;; Set custom font.
-(if (featurep 'ns)
+(if window-system (if (featurep 'ns)
     (progn (arrange-frame 80 27 10 20)
-           (set-font "Monaco" "LiHei Pro" 20 24)))
+           (set-font "Monaco" "LiHei Pro" 20 24))))
 
 (set 'org-latex-to-pdf-process
      '("xelatex -interaction nonstopmode %f"
        "xelatex -interaction nonstopmode %f"
        "xelatex -interaction nonstopmode %f"))
 
-(add-to-list 'trac-projects '("kkbox" :endpoint "https://issue.kkcorp/trac/xmlrpc"))
 (setq ns-pop-up-frames nil)
-
 
 (require 'package)
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
+
+(eval-after-load "org" '(require 'ox-md nil t))
