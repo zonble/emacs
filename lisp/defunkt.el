@@ -26,5 +26,7 @@
 (vendor 'dash)
 (vendor 'request)
 (vendor 'cl-lib)
+(vendor 'org-trello)
+(vendor 'go-mode)
 (vendor 'julia-mode)
 (vendor 'swift-mode)

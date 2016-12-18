@@ -1,7 +1,7 @@
-[submodule "twilight-emacs"]
+[submodule "vendor/twilight-emacs"]
     path = vendor/twilight-emacs
     url = git://github.com/crafterm/twilight-emacs.git
-[submodule "/magit"]
+[submodule "vendor/magit"]
     path = vendor/magit
     url = git://github.com/technomancy/magit.git
 [submodule "cheat.el"]
@@ -43,12 +43,18 @@
 [submodule "vendor/coffee-mode"]
     path = vendor/coffee-mode
     url = https://github.com/defunkt/coffee-mode.git
+[submodule "vendor/org-trello"]
+    path = vendor/org-trello
+    url = http://github.com/ardumont/org-trello.git
 [submodule "vendor/dash"]
     path = vendor/dash
     url = https://github.com/magnars/dash.el.git
 [submodule "vendor/request"]
     path = vendor/request
     url = https://github.com/tkf/emacs-request
+[submodule "vendor/go-mode"]
+    path = vendor/go-mode
+    url = https://github.com/dominikh/go-mode.el
 [submodule "vendor/swift-mode"]
     path = vendor/swift-mode
     url = https://github.com/chrisbarrett/swift-mode.git
