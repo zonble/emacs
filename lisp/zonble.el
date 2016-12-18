@@ -42,7 +42,7 @@
   (insert (format
            "//\n// %s\n//\n// %s\n//"
            (file-name-nondirectory (buffer-file-name))
-           "Copyright (c) 2008-2013 KKBOX Taiwan Co., Ltd. All Rights Reserved.")))
+           "Copyright (c) 2008-2016 KKBOX Taiwan Co., Ltd. All Rights Reserved.")))
 
 (defun today ()
   "Insert string for today's date nicely formatted in American style,
@@ -101,3 +101,6 @@ e.g. Sunday, September 17, 2000."
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
 
 (eval-after-load "org" '(require 'ox-md nil t))
+(setq org-startup-truncated nil)
+(custom-set-variables
+   '(markdown-command "/usr/local/bin/pandoc"))
